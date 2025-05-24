@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Neural Operators for Faster Geohydrological Modeling"
-permalink: /projects/neural-operators-hydro/
+title: "AI for Groundwater Modelling"
+permalink: /projects/AI-for-groundwater-modelling/
 ---
 
 Numerical modeling in hydrology and climate science often requires immense computational resources—especially for high-resolution, long-term simulations. As the demand for fast, accurate, and scalable forecasting grows, AI-based surrogate models offer a promising alternative.

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Deep Learning vs Machine Learning for Dry Spell Modeling"
-permalink: /projects/dry-spell-modeling/
+permalink: /projects/dry-spell-forecasting/
 ---
 
 How do we model the patterns of drought? This project explores how well Machine Learning and Deep Learning methods can capture the behavior of dry spell sequences—periods without rainfall critical to agriculture and water management.

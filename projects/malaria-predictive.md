@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Predicting Malaria Prevalence with Environmental Data"
-permalink: /projects/malaria-prediction/
+permalink: /projects/malaria-predictive/
 ---
 
 In collaboration with **Arup** and **Médecins Sans Frontières (MSF)**, this project developed an AI-based tool to predict malaria prevalence using satellite-derived environmental variables. Accurate forecasting helps optimize resource allocation for prevention and treatment in vulnerable regions.
