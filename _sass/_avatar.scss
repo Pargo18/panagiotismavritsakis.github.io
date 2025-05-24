@@ -1,0 +1,15 @@
+
+.github-avatar {
+  //position: fixed;
+  float: left;                // hugs the left edge of the article
+  top: 5rem;   /* ↓ pushes it ~2.5 rem lower than before               */
+  left: 8rem;    /* ← pins it to the left edge (swap for right: if needed) */
+  width: 150px;  /* bigger—pick any size; GitHub serves hi-res automatically */
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+  object-fit: cover;
+  transition: transform .15s ease;
+
+  &:hover { transform: scale(1.06); }
+}

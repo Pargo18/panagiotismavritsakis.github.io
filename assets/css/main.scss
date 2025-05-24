@@ -1,0 +1,268 @@
+---
+# Front matter required by Jekyll (keep empty)
+---
+
+/* ---- Custom Typography (Adjustable) ---- */
+
+/* Type scale (paragraph and general text sizes) */
+$type-size-1: 2.441em !default;
+$type-size-2: 1.953em !default;
+$type-size-3: 1.563em !default;
+$type-size-4: 1.25em !default;
+$type-size-5: 1.0em !default; // main paragraph size
+$type-size-6: 0.8em !default;
+$type-size-7: 0.8em !default;
+$type-size-8: 0.625em !default;
+
+/* Headline scale */
+$h-size-1: 1.563em !default;
+$h-size-2: 1.35em !default;
+//$h-size-2: 1.25em !default;
+//$h-size-3: 1.125em !default;
+$h-size-3: 1.08em !default;
+$h-size-4: 1.0625em !default;
+$h-size-5: 1.03125em !default;
+$h-size-6: 1em !default;
+
+$max-width: 1440px;       // ← pick whatever max you like :contentReference[oaicite:0]{index=0}
+
+
+/* ---- Import the theme ---- */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dark' }}";
+@import "minimal-mistakes";
+
+
+/* ---- Global font-size adjustments (responsive) ---- */
+html {
+  font-size: 14px; // Base font size (small screens)
+
+  @include breakpoint($medium) {
+    font-size: 16px; // Tablets and larger
+  }
+
+  @include breakpoint($large) {
+    font-size: 20px; // Desktop screens
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 20px; // Extra-large screens
+  }
+}
+
+//body {
+//  background-color: #000 !important;
+//  color: #f0f0f0 !important;
+//}
+//
+//.site-header,
+//.masthead,
+//.site-footer {
+//  background-color: #111 !important;
+//  color: #eee !important;
+//}
+
+a {
+  color: goldenrod !important; /* Optional: links */
+}
+
+a.gold-link {
+  color: goldenrod !important;
+}
+
+a.white-link {
+  color: whitesmoke !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #a430c9 !important;
+  //color: #9c27c2 !important;
+}
+
+//.page .page__header .page__title,
+//.page .page__title,
+//.page__header h1.page__title {
+//  color: #a430c9 !important;
+//}
+
+.home-page .page__title {
+  display: none !important;
+}
+
+.page__title,
+.page__title a {
+  color: goldenrod !important;
+}
+
+/* ---- Justify main content and set page width ---- */
+.page__content {
+  text-align: justify;
+}
+
+.site-title {
+  font-size: 1.4em !important; /* or try 24px */
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Increase nav link font size globally */
+.masthead__menu-item a {
+  font-size: 1.2em !important; /* or use 18px */
+  font-weight: 700;
+  padding: 0 0.75rem;
+}
+
+.page__content p {
+  font-size: 0.95em; /* default is ~1em */
+  line-height: 1.6;
+}
+
+.page__content strong {
+  font-size: 0.95em; /* reduce bold text size */
+  font-weight: 600;  /* optional: make it less heavy */
+}
+
+.cv-page h2 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 1rem; /* Optional: add spacing if needed */
+}
+
+.cv-page.page__inner-wrap {
+  max-width: none !important;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+//.cv-page .grid__wrapper {
+//  display: grid;
+//  grid-template-columns: 300px 1fr;
+//  gap: 2rem;
+//}
+//
+//.cv-page .grid__wrapper > div {
+//  background: transparent; /* optional: no background */
+//  padding: 0;
+//}
+//
+//.cv-page.page {
+//  margin: 0 !important;
+//  padding: 0 !important;
+//}
+//
+//.cv-page.page__content {
+//  margin: 0 auto !important;
+//}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid goldenrod;
+  white-space: nowrap;
+  width: 0;
+  color: goldenrod !important;  /* <- force override */
+  animation:
+    typing 3.5s steps(40, end) forwards,
+    blink 0.8s step-end 3.5s 1 forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent }
+  50% { border-color: #fff }
+}
+
+//@import "avatar";
+
+
+.github-avatar {
+  position: absolute;   /* now measured against the viewport */
+  top: 6rem;            /* tweak as you like */
+  left: 5rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  object-fit: cover;
+  transition: transform .15s ease;
+  z-index: 10;          /* float above everything else */
+
+  &:hover { transform: scale(1.06); }
+}
+
+
+
+/* 1. The two-column grid */
+.cv-grid {
+  display: grid;
+
+  /* FIXED sidebar width + fluid main */
+  //grid-template-columns: 1fr 3fr !important;
+  grid-template-columns: 300px 900px;
+
+  /* tighten up the space between them */
+  gap: 3rem;
+
+  max-width: 1700px;
+
+  margin: 2rem 0 2rem 2rem;
+
+  /* ensure padding you add doesn’t inflate the track width */
+  box-sizing: border-box;
+
+  /* optional: give the container some padding from the viewport */
+  padding: 0 5rem;
+}
+
+/* 2. The sticky sidebar panel */
+.cv-grid > aside {
+  position: sticky;
+  top: 2rem;
+  //padding-left: 5;
+
+  /* small inner padding only */
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.cv-grid > main p {
+  text-align: justify;
+}
+
+.cv-grid h1 {
+  font-size: 1.7rem;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 1rem; /* Optional: add spacing if needed */
+}
+
+.cv-grid h2 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 1rem; /* Optional: add spacing if needed */
+}
+
+.cv-grid .github-avatar {
+  position: absolute;    /* stays absolutely positioned */
+  top: 0.5rem;
+  left: 50%;             /* move its left edge to the middle */
+  transform: translateX(-50%);  /* shift it back by half its own width */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.page__title,
+.page__title a {
+  color: #a430c9 !important;
+}
+
+.manual_title,
+.manual_title a {
+  color: goldenrod !important;
+}
+

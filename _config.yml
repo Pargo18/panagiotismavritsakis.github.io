@@ -1,0 +1,19 @@
+# ── _config.yml ──
+
+remote_theme: "mmistakes/minimal-mistakes@4.25.0"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+minimal_mistakes_skin: "dark"    # built‑in skins include "dark", "default", "air", "mint", etc. :contentReference[oaicite:0]{index=0}
+
+nav:
+  - title: "Curriculum Vitae"
+    url: /cv/
+  - title: "Projects"
+    url:   /projects/
+  - title: "Research"
+    url: /research/
