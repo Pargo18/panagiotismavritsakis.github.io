@@ -1,5 +1,6 @@
 #remote_theme: "mmistakes/minimal-mistakes@4.25.0"
-theme: "minimal-mistakes-jekyll"
+#theme: "minimal-mistakes-jekyll"
+theme: null
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
