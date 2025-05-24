@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Wind Energy Forecasting with Machine Learning – EGU 2020"
-permalink: /projects/wind-forecasting.md/
+title: "Wind Energy Forecasting with Machine Learning"
+permalink: /projects/wind-forecasting/
 ---
 
 As the world transitions to renewable energy, accurately forecasting wind energy generation becomes crucial for grid reliability and planning. This project, presented at the **European Geosciences Union (EGU) General Assembly 2020**, applies **machine learning techniques to predict wind power generation** using atmospheric variables from reanalysis datasets.
