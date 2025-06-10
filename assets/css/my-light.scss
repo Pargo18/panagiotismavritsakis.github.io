@@ -24,7 +24,7 @@ $h-size-6: 1em !default;
 $max-width: 1440px !default;
 
 /* ---- Import the theme ---- */
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'white' }}";
+@import "minimal-mistakes/skins/air";
 @import "minimal-mistakes";
 
 /* ---- Global font-size adjustments (responsive) ---- */

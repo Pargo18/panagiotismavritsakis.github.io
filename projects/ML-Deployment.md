@@ -4,7 +4,7 @@ title: "Automated Reliability Platform for Linear Infrastructure"
 permalink: /projects/ML-deployment/
 ---
 
-his project involved the design and development of a **Python-based automation platform** tailored for linear infrastructure engineering workflows. The platform integrates multiple components to provide a robust solution for data ingestion, modeling, analysis, and stakeholder interaction.
+This project involved the design and development of a **Python-based automation platform** tailored for linear infrastructure engineering workflows. The platform integrates multiple components to provide a robust solution for data ingestion, modeling, analysis, and stakeholder interaction.
 
 The system features:
 
