@@ -13,5 +13,6 @@ nav_order: 2
 - <a href="{{ site.baseurl }}/projects/reddit-sentiment" class="white-link">Reddit Sentiment Analysis for Stock Price Forecasting</a>
 - <a href="{{ site.baseurl }}/projects/malaria-predictive" class="white-link">Developing ML forecasting tools for Malaria prevelance in South Sudan</a>
 - <a href="{{ site.baseurl }}/projects/wind-forecasting" class="white-link">Wind forecasting and power generation algorithms</a>
+- <a href="{{ site.baseurl }}/projects/ML-Deployment" class="white-link">Automated Reliability Platform for Linear Infrastructure</a>
 
 ---
