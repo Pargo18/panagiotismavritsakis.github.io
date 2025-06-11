@@ -28,7 +28,7 @@ $max-width: 1440px;       // ← pick whatever max you like :contentReference[oa
 
 
 /* ---- Import the theme ---- */
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'air' }}";
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'mint' }}";
 @import "minimal-mistakes";
 
 
