@@ -1,6 +1,3 @@
-#remote_theme: "mmistakes/minimal-mistakes@4.25.0"
-#theme: "minimal-mistakes-jekyll"
-# theme: null
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -11,7 +8,8 @@ plugins:
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "my-light"
 
-baseurl: "/panagiotismavritsakis.github.io"
+# baseurl: "/panagiotismavritsakis.github.io"
+baseurl: ""
 url: "https://pargo18.github.io"
 
 nav:
