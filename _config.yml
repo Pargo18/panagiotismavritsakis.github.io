@@ -9,6 +9,9 @@ plugins:
   - jekyll-include-cache
 
 minimal_mistakes_skin: "air"    # built‑in skins include "dark", "default", "air", "mint", etc. :contentReference[oaicite:0]{index=0}
+# other settings
+baseurl: ""
+url: "https://pargo18.github.io"
 
 nav:
   - title: "Curriculum Vitae"
